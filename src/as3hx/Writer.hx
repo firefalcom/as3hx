@@ -132,6 +132,8 @@ class Writer
                     // catch comments before else blocks
                     writeNL();
                     writeIndent(s);
+                    writeNL();
+                    write(indent());
                     result.push(ENL(e));
                 case ENL(ex): f(ex);
                 case EObject(fl) if(fl.empty()):
